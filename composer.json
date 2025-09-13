@@ -1,0 +1,35 @@
+{
+    "name": "johninamillion/php-code-styles",
+    "description": "PHP-CS-Fixer configuration and PHPStan setup for PHP projects.",
+    "keywords": [
+        "php",
+        "php-cs-fixer",
+        "phpstan"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "johninamillion",
+            "email": "git@millionvisions.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "johninamillion\\PHPCodeStyles\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.4",
+        "johninamillion/scripture-header": "^0.1.0",
+        "friendsofphp/php-cs-fixer": "^3.80",
+        "phpstan/phpstan": "^2.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "cs:analyse": "./vendor/bin/phpstan analyse",
+        "cs:fix": "./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php"
+    },
+    "minimum-stability": "stable"
+}
