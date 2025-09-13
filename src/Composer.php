@@ -54,7 +54,7 @@ class Composer
      */
     protected static function publishFile(string $source, ?string $target = null, bool $overwrite = false): void
     {
-        $source = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . $source;
+        $source = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . $source;
         $basename = basename($source);
         $target = $target
             ? getcwd() . DIRECTORY_SEPARATOR . $target
