@@ -26,6 +26,7 @@ return (new Config())
     ->registerCustomFixers([
         'MillionVisions/scripture_header' => new ScriptureHeaderFixer()
     ])
+    ->setCacheFile(__DIR__ . '/tmp/php-cs-fixer/cache/.php-cs-fixer.cache')
     ->setFinder($finder)
     ->setRiskyAllowed(true)
     ->setRules($rules);
