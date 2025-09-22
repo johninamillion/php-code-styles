@@ -28,8 +28,8 @@
         "roave/security-advisories": "dev-latest"
     },
     "scripts": {
-        "cs:analyse": "./vendor/bin/phpstan analyse",
-        "cs:fix": "./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php"
+        "code:analyse": "./vendor/bin/phpstan analyse",
+        "code:format": "./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php"
     },
     "minimum-stability": "stable"
 }

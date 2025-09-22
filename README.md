@@ -44,12 +44,12 @@ Add the following scripts to your `composer.json` file:
 
 Fix code styles with PHP-CS-Fixer:
 ```bash
-composer cs:fix
+composer code:format
 ```
 
 Analyse your code with PHPStan:
 ```bash
-composer cs:analyse
+composer code:analyse
 ```
 
 ---
