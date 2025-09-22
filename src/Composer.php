@@ -26,8 +26,8 @@ class Composer
     public static function install(): void
     {
         self::publishFile('.editorconfig');
-        self::publishFile('.php-cs-fixer.php.dist');
-        self::publishFile('phpstan.neon.dist');
+        self::publishFile('.php-cs-fixer.php.dist', '.php-cs-fixer.php');
+        self::publishFile('phpstan.neon.dist', 'phpstan.neon');
     }
 
     /**
@@ -39,8 +39,8 @@ class Composer
     public static function update(): void
     {
         self::publishFile('.editorconfig');
-        self::publishFile('.php-cs-fixer.php.dist');
-        self::publishFile('phpstan.neon.dist');
+        self::publishFile('.php-cs-fixer.php.dist', '.php-cs-fixer.php');
+        self::publishFile('phpstan.neon.dist', 'phpstan.neon');
     }
 
     /**
