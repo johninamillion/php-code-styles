@@ -103,7 +103,48 @@ return [
     'class_attributes_separation' => ['elements' => ['method' => 'one']],
     'class_definition' => true,
     'ordered_class_elements' => [
-        'order' => ['case', 'constant', 'use_trait', 'property', 'construct', 'destruct', 'magic', 'method'],
+        'order' => [
+            'use_trait',
+            'public',
+            'protected',
+            'private',
+            'case',
+            'constant',
+            'constant_public',
+            'constant_protected',
+            'constant_private',
+            'property',
+            'property_static',
+            'property_public',
+            'property_protected',
+            'property_private',
+            'property_public_abstract',
+            'property_public_readonly',
+            'property_protected_abstract',
+            'property_protected_readonly',
+            'property_private_readonly',
+            'property_public_static',
+            'property_protected_static',
+            'property_private_static',
+            'construct',
+            'destruct',
+            'magic',
+            'method',
+            'method_abstract',
+            'method_static',
+            'method_public',
+            'method_protected',
+            'method_private',
+            'method_public_abstract',
+            'method_protected_abstract',
+            'method_private_abstract',
+            'method_public_abstract_static',
+            'method_protected_abstract_static',
+            'method_private_abstract_static',
+            'method_public_static',
+            'method_protected_static',
+            'method_private_static'
+        ],
     ],
     'visibility_required' => ['elements' => ['property', 'method']],
     'single_class_element_per_statement' => true,
@@ -161,16 +202,29 @@ return [
     'ternary_to_null_coalescing' => true,
 
     // ------------------------------------------------------------------------
-    // Namespaces & Imports
+    // Namespace
     // ------------------------------------------------------------------------
+    'clean_namespace' => true,
+
+    // ------------------------------------------------------------------------
+    // Imports
+    // ------------------------------------------------------------------------
+    'global_namespace_import' => [
+        'import_classes' => true,
+        'import_constants' => true,
+        'import_functions' => true
+    ],
     'ordered_imports' => [
+        'case_sensitive' => true,
         'sort_algorithm' => 'alpha',
         'imports_order' => ['class', 'function', 'const'],
     ],
+    'no_unneeded_import_alias' => true,
     'no_unused_imports' => true,
     'no_leading_import_slash' => true,
     'no_leading_namespace_whitespace' => true,
-    'clean_namespace' => true,
+    'single_import_per_statement' => true,
+    'single_line_after_imports' => true,
 
     // ------------------------------------------------------------------------
     // Cleaning & Optimization
@@ -181,7 +235,6 @@ return [
     'no_unset_cast' => true,
     'no_useless_return' => true,
     'lambda_not_used_import' => true,
-    'no_unneeded_import_alias' => true,
     'set_type_to_cast' => false,
     'regular_callable_call' => false,
 
@@ -203,8 +256,6 @@ return [
     'self_static_accessor' => true,
     'semicolon_after_instruction' => true,
     'short_scalar_cast' => true,
-    'single_import_per_statement' => true,
-    'single_line_after_imports' => true,
     'single_line_empty_body' => true,
     'single_line_throw' => true,
     'yoda_style' => false,
