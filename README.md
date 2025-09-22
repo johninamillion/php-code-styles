@@ -32,8 +32,8 @@ Add the following scripts to your `composer.json` file:
         "post-update-cmd": [
             "johninamillion\\PHPCodeStyles\\Composer::update"
         ],
-        "cs:analyse": "./vendor/bin/phpstan analyse",
-        "cs:fix": "./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php.dist"
+        "code:analyse": "./vendor/bin/phpstan analyse",
+        "code:format": "./vendor/bin/php-cs-fixer fix"
     }
 }
 ```
