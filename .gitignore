@@ -1,5 +1,20 @@
+# Mac
 .DS_Store
-.idea
-.php-cs-fixer.cache
+# Windows
+Thumbs.db
+
+# IDEs
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Log Files
+*.log
+
+# Temporary files
 /tmp
+
+# Composer
 /vendor
