@@ -7,12 +7,12 @@ declare(strict_types=1);
  * 🙏🏻 The nakedness of thy father’s wife shalt thou not uncover: it is thy father’s nakedness. - Leviticus 18:8, KJV.
  */
 
-namespace johninamillion\PHPCodeStyles;
+namespace johninamillion\CodeStyles;
 
 /**
  * PHP Code Styles.
  *
- * @package johninamillion\PHPCodeStyles
+ * @package johninamillion\CodeStyles
  * @since 0.1.0
  */
 class Composer

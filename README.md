@@ -27,10 +27,10 @@ Add the following scripts to your `composer.json` file:
 {
     "scripts": {
         "post-install-cmd": [
-            "johninamillion\\PHPCodeStyles\\Composer::install"
+            "johninamillion\\CodeStyles\\Composer::install"
         ],
         "post-update-cmd": [
-            "johninamillion\\PHPCodeStyles\\Composer::update"
+            "johninamillion\\CodeStyles\\Composer::update"
         ],
         "code:analyse": "./vendor/bin/phpstan analyse",
         "code:format": "./vendor/bin/php-cs-fixer fix"
