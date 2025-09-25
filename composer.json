@@ -19,7 +19,7 @@
         }
     },
     "require": {
-        "php": "^8.4",
+        "php": "^8.2",
         "johninamillion/scripture-header": "^0.2.0",
         "friendsofphp/php-cs-fixer": "^3.80",
         "phpstan/phpstan": "^2.0"
